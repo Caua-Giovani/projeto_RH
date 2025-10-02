@@ -6,23 +6,109 @@
     box-sizing: border-box;
 }
 
+
 .container-pai{
-    display: flex;
-}
-.container-left{
-    width: 70vw;
+    display: flex;  
+    width: 100vw;
     height: 100vh;
-    background-color: gray;
+    padding: 50px 100px;
+    position: relative;
+}
+
+.container-left{
+    width: 40vw;
+    height: 90vh;
+    background-color: rgb(230, 230, 230);
 }
 
 .container-right{
-    width: 50vw;
-    height: 100vh;
-    background-color: darkgray;
+    width: 60vw;
+    height: 90vh;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 50px;
+    position: relative;
+    justify-content: flex-end;
 }
 
 .container-left img{
-    height: 100vh;
+    height: 90vh;
     width:60vw ;
     z-index: 100;
+    position: fixed;
+}
+
+.faixa-vermelha{
+    background-color: red;
+    height: 65px;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    right: 0px;
+    bottom: 24%;
+    padding-right: 50px;
+}
+
+.texto-faixa{
+    color: white;
+    font-weight:bold;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container-conteudo{
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: flex-end;
+    margin-top: 70px;
+    
+}
+
+.container-conteudo h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-size: 70px;
+    text-align: end;
+}
+
+.texto-cadastro{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 55px;
+    text-align: end;
+    font-style:italic;
+    margin: 0 0 20px 0;
+}
+
+.container-conteudo h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 25px;
+    text-align: end;
+    font-weight: 800px;
+}
+
+.texto-01{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    text-align: end;
+    font-weight: 800px;
+}
+
+.container-logos{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 55px;
+    
+}
+
+.container-logos img{
+    height: 55px;
 }
